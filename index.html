@@ -1,0 +1,607 @@
+<link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="jquery.min.js"></script>
+
+<link rel="stylesheet"   href="bootstrap.min.css" />				
+  <script   src="jquery.js"></script>
+  <script src="bootstrap.min.js"></script>
+  
+<!------ Include the above in your HEAD tag ---------->
+<style>
+.port-image
+{
+    width: 100%;
+}
+
+.col-md-3
+{
+    margin-bottom:20px;
+}
+
+.each-item
+{
+    position:relative;
+    overflow:hidden;
+}
+
+.each-item:hover .cap2, .each-item:hover .cap1
+{
+    left:0px;
+}
+
+.cap1
+{
+    position:absolute;
+    width:100%;
+    height:70%;
+    background:rgba(255, 255, 255, 0.5);
+    top:0px;
+    left:-100%;
+    padding:10px;
+    
+    transition: all .5s;
+}
+
+.cap2
+{
+    position:absolute;
+    width:100%;
+    height:30%;
+    background:rgba(0, 178, 255, 0.5);
+    bottom:0px;
+    left:100%;
+    padding:10px;
+    
+    transition: all .5s;
+}
+
+</style>
+<script>
+$(document).ready(function(){
+
+ $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script   src="jquery.min.js"></script>
+<script   src="jquery.js"></script>
+<script type="text/javascript" src="jquery.shop.js"></script>
+
+<form class="modal fade" id="wine1details" role="dialog" >
+  <div class="modal-dialog modal-lg"  >
+  <div class="modal-content"  id="userdetails"  ><div class="modal-header"><div class="modal-header"><div class="btn-info btn-sm">WINE #1 DETAILS</div></div></div>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-2">
+  
+<img src="wine1.jpg" width="70%" height="50%" alt="" />		
+</div>
+<div class="col-sm-4">
+<h3>NAME WINE 1</h3>
+<h3>SIZE 700Ml</h3>
+<h3>ALCOHOL 45%</h3>
+<h3>LEMON FLAVOURED</h3>
+
+<button type="button" class="btn-info btn-sm" data-dismiss="modal" id="close2">CLOSE</button>		
+</div>
+<div class="col-sm-6"></div>  
+  </div>
+</div><hr>
+
+  </div>
+  </div>
+ 
+  </form> 
+  
+  
+  
+  <form class="modal fade" id="wine2details" role="dialog" >
+  <div class="modal-dialog modal-lg"  >
+  <div class="modal-content"  id="userdetails"  ><div class="modal-header"><div class="modal-header"><div class="btn-info btn-sm">WINE #1 DETAILS</div></div></div>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-2">
+  
+<img src="wine2.jpg" width="85%" height="50%" alt="" />		
+</div>
+<div class="col-sm-4">
+<h3>NAME WINE 2</h3>
+<h3>SIZE 700Ml</h3>
+<h3>ALCOHOL 45%</h3>
+<h3>LEMON FLAVOURED</h3>
+
+<button type="button" class="btn-info btn-sm" data-dismiss="modal" id="close2">CLOSE</button>		
+</div>
+<div class="col-sm-6"></div>  
+  </div>
+</div><hr>
+
+  </div>
+  </div>
+ 
+  </form>
+  
+  <form class="modal fade" id="wine3details" role="dialog" >
+  <div class="modal-dialog modal-lg"  >
+  <div class="modal-content"  id="userdetails"  ><div class="modal-header"><div class="modal-header"><div class="btn-info btn-sm">WINE #1 DETAILS</div></div></div>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-2">
+  
+<img src="wine3.jpg" width="70%" height="50%" alt="" />		
+</div>
+<div class="col-sm-4">
+<h3>NAME WINE 3</h3>
+<h3>SIZE 700Ml</h3>
+<h3>ALCOHOL 45%</h3>
+<h3>ORANGE FLAVOURED</h3>
+
+<button type="button" class="btn-info btn-sm" data-dismiss="modal" id="close2">CLOSE</button>		
+</div>
+<div class="col-sm-6"></div>  
+  </div>
+</div><hr>
+
+  </div>
+  </div>
+ 
+  </form> 
+  
+  <form class="modal fade" id="wine4details" role="dialog" >
+  <div class="modal-dialog modal-lg"  >
+  <div class="modal-content"  id="userdetails"  ><div class="modal-header"><div class="modal-header"><div class="btn-info btn-sm">WINE #4 DETAILS</div></div></div>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-2">
+  
+<img src="wine4.jpg" width="70%" height="50%" alt="" />		
+</div>
+<div class="col-sm-4">
+<h3>NAME WINE 4</h3>
+<h3>SIZE 700Ml</h3>
+<h3>ALCOHOL 45%</h3>
+<h3>ORANGE FLAVOURED</h3>
+
+<button type="button" class="btn-info btn-sm" data-dismiss="modal" id="close2">CLOSE</button>		
+</div>
+<div class="col-sm-6"></div>  
+  </div>
+</div><hr>
+
+  </div>
+  </div>
+ 
+  </form> 
+  
+  
+  <form class="modal fade" id="wine5details" role="dialog" >
+  <div class="modal-dialog modal-lg"  >
+  <div class="modal-content"  id="userdetails"  ><div class="modal-header"><div class="modal-header"><div class="btn-info btn-sm">WINE #5 DETAILS</div></div></div>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-2">
+  
+<img src="wine5.jpg" width="70%" height="50%" alt="" />		
+</div>
+<div class="col-sm-4">
+<h3>NAME WINE 5</h3>
+<h3>SIZE 700Ml</h3>
+<h3>ALCOHOL 45%</h3>
+<h3>PINE APPLE FLAVOURED</h3>
+
+<button type="button" class="btn-info btn-sm" data-dismiss="modal" id="close2">CLOSE</button>		
+</div>
+<div class="col-sm-6"></div>  
+  </div>
+</div><hr>
+
+  </div>
+  </div>
+ 
+  </form>
+
+ <form class="modal fade" id="wine6details" role="dialog" >
+  <div class="modal-dialog modal-lg"  >
+  <div class="modal-content"  id="userdetails"  ><div class="modal-header"><div class="modal-header"><div class="btn-info btn-sm">WINE #6 DETAILS</div></div></div>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-2">
+  
+<img src="wine6.jpg" width="70%" height="50%" alt="" />		
+</div>
+<div class="col-sm-4">
+<h3>NAME WINE 6</h3>
+<h3>SIZE 700Ml</h3>
+<h3>ALCOHOL 45%</h3>
+<h3>PINE APPLE FLAVOURED</h3>
+
+<button type="button" class="btn-info btn-sm" data-dismiss="modal" id="close2">CLOSE</button>		
+</div>
+<div class="col-sm-6"></div>  
+  </div>
+</div><hr>
+
+  </div>
+  </div>
+ 
+  </form>  
+  
+   <form class="modal fade" id="wine7details" role="dialog" >
+  <div class="modal-dialog modal-lg"  >
+  <div class="modal-content"  id="userdetails"  ><div class="modal-header"><div class="modal-header"><div class="btn-info btn-sm">WINE #7 DETAILS</div></div></div>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-2">
+  
+<img src="wine7.jpg" width="70%" height="50%" alt="" />		
+</div>
+<div class="col-sm-4">
+<h3>NAME WINE 7</h3>
+<h3>SIZE 700Ml</h3>
+<h3>ALCOHOL 45%</h3>
+<h3>PASSION FLAVOURED</h3>
+
+<button type="button" class="btn-info btn-sm" data-dismiss="modal" id="close2">CLOSE</button>		
+</div>
+<div class="col-sm-6"></div>  
+  </div>
+</div><hr>
+
+  </div>
+  </div>
+ 
+  </form>
+  
+   <form class="modal fade" id="wine8details" role="dialog" >
+  <div class="modal-dialog modal-lg"  >
+  <div class="modal-content"  id="userdetails"  ><div class="modal-header"><div class="modal-header"><div class="btn-info btn-sm">WINE #8 DETAILS</div></div></div>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-2">
+  
+<img src="wine8.jpg" width="80%" height="50%" alt="" />		
+</div>
+<div class="col-sm-4">
+<h3>NAME WINE 8</h3>
+<h3>SIZE 700Ml</h3>
+<h3>ALCOHOL 45%</h3>
+<h3>PASSION FLAVOURED</h3>
+
+<button type="button" class="btn-info btn-sm" data-dismiss="modal" id="close2">CLOSE</button>		
+</div>
+<div class="col-sm-6"></div>  
+  </div>
+</div><hr>
+
+  </div>
+  </div>
+ 
+  </form>
+  
+  
+   <form class="modal fade" id="wine9details" role="dialog" >
+  <div class="modal-dialog modal-lg"  >
+  <div class="modal-content"  id="userdetails"  ><div class="modal-header"><div class="modal-header"><div class="btn-info btn-sm">WINE #9 DETAILS</div></div></div>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-2">
+  
+<img src="wine9.jpg" width="120%" height="50%" alt="" />		
+</div>
+<div class="col-sm-4">
+<h3>NAME WINE 9</h3>
+<h3>SIZE 700Ml</h3>
+<h3>ALCOHOL 45%</h3>
+<h3>PASSION FLAVOURED</h3>
+
+<button type="button" class="btn-info btn-sm" data-dismiss="modal" id="close2">CLOSE</button>		
+</div>
+<div class="col-sm-6"></div>  
+  </div>
+</div><hr>
+
+  </div>
+  </div>
+ 
+  </form>
+  
+    
+   <form class="modal fade" id="wine10details" role="dialog" >
+  <div class="modal-dialog modal-lg"  >
+  <div class="modal-content"  id="userdetails"  ><div class="modal-header"><div class="modal-header"><div class="btn-info btn-sm">WINE #10 DETAILS</div></div></div>
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-2">
+  
+<img src="wine10.jpg" width="160%" height="50%" alt="" />		
+</div>
+<div class="col-sm-4">
+<h3>NAME WINE 10</h3>
+<h3>SIZE 700Ml</h3>
+<h3>ALCOHOL 45%</h3>
+<h3>PASSION FLAVOURED</h3>
+
+<button type="button" class="btn-info btn-sm" data-dismiss="modal" id="close2">CLOSE</button>		
+</div>
+<div class="col-sm-6"></div>  
+  </div>
+</div><hr>
+
+  </div>
+  </div>
+ 
+  </form>
+  
+<div class="container">
+  
+    <div>
+        <button class="btn btn-primary filter-button" data-filter="all">All</button>
+        <button class="btn btn-default filter-button" data-filter="russian">Russian</button>
+        <button class="btn btn-default filter-button" data-filter="germany">Germany</button>
+        <button class="btn btn-default filter-button" data-filter="uk">UNUTED KINGDOM</button>
+    </div>
+    <br/>
+	
+	 <div class="modal fade"  role="dialog" method="post"  id="item3details" >xxxxx
+	 </div>
+    
+    <div class="row">
+	
+	
+	<div id="site">
+	<div id="content">
+		<div id="products">
+			<ul>
+			
+			
+        <div class="col-md-3 filter russian">
+            <div class="each-item">
+              <li>
+			  
+			  
+					 <img src="wine1.jpg" width="50%" height="120px" alt="" />
+					<div class="product-description" data-name="Wine #1" data-price="8">
+						<h3 class="product-name">WINE #1:&euro; 8</h3>
+						<form class="add-to-cart" action="cart.html" method="post">
+						<label for="qty-1">Quantity<input type="text" name="qty-1" id="qty-1" class="qty" value="1" /> </label>
+						<br>
+							<input type="submit" value="Add"  class="btn-info btn-sm" />&nbsp;
+							<input type="button"  data-toggle="modal"  value="Details"   data-toggle="modal" data-target="#wine1details"  class="btn-info btn-sm"  />
+							
+						</form>
+						
+					</div>
+					
+				</li>
+				
+				
+                
+            </div>
+            
+        </div>
+        
+        <div class="col-md-3 filter germany russian">
+            <div class="each-item">
+                <li>
+					<div class="product-image">
+						<img src="wine2.jpg"   width="45%" height="120px" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #2" data-price="9">
+						<h3 class="product-name">Wine #2:&euro; 9</h3>
+						<form class="add-to-cart" action="cart.html" method="post">
+						<label for="qty-1">Quantity<input type="text" name="qty-2" id="qty-2" class="qty" value="1" /> </label>
+						<br>
+							<input type="submit" value="Add"  class="btn-info btn-sm" />&nbsp;
+							<input type="button"  data-toggle="modal"  value="Details"   data-toggle="modal" data-target="#wine2details"  class="btn-info btn-sm"  />
+							
+						</form>
+					</div>
+				</li>
+            </div>
+        </div>
+        
+        <div class="col-md-3 filter uk">
+            <div class="each-item">
+            <li>
+					<div class="product-image">
+						<img src="wine3.jpg"    width="30%" height="120px" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #3" data-price="11">
+						<h3 class="product-name">Wine #3:&euro; 11</h3>
+						
+						<form class="add-to-cart" action="cart.html" method="post">
+						<label for="qty-1">Quantity<input type="text" name="qty-3" id="qty-3" class="qty" value="1" /> </label>
+						<br>
+							<input type="submit" value="Add"  class="btn-info btn-sm" />&nbsp;
+							<input type="button"  data-toggle="modal"  value="Details"   data-toggle="modal" data-target="#wine3details"  class="btn-info btn-sm"  />
+							
+						</form>
+					</div>
+				</li>
+            </div>
+        </div>
+        
+        <div class="col-md-3 filter germany russian">
+            <div class="each-item">
+                <li>
+					<div class="product-image">
+						<img src="wine4.jpg"    width="50%" height="120px" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #4" data-price="11">
+						<h3 class="product-name">Wine #4:&euro; 11</h3>
+						
+						<form class="add-to-cart" action="cart.html" method="post">
+						<label for="qty-1">Quantity<input type="text" name="qty-4" id="qty-4" class="qty" value="1" /> </label>
+						<br>
+							<input type="submit" value="Add"  class="btn-info btn-sm" />&nbsp;
+							<input type="button"  data-toggle="modal"  value="Details"   data-toggle="modal" data-target="#wine4details"  class="btn-info btn-sm"  />
+							
+						</form>
+					</div>
+				</li>
+            </div>
+        </div>
+        
+        <div class="col-md-3 filter uk germany">
+            <div class="each-item">
+                <li>
+					 <img src="wine5.jpg" width="50%" height="120px" alt="" />
+					<div class="product-description" data-name="Wine #5" data-price="5">
+						<h3 class="product-name">Wine #5:&euro; 5</h3>
+						<form class="add-to-cart" action="cart.html" method="post">
+						<label for="qty-5">Quantity<input type="text" name="qty-5" id="qty-5" class="qty" value="1" /> </label>
+						<br>
+							<input type="submit" value="Add"  class="btn-info btn-sm" />&nbsp;
+							<input type="button"  data-toggle="modal"  value="Details"   data-toggle="modal" data-target="#wine5details"  class="btn-info btn-sm"  />
+							
+						</form>
+						
+					</div>
+					
+				</li>
+            </div>
+        </div>
+        
+        <div class="col-md-3 filter russian">
+            <div class="each-item">
+                <li>
+					 <img src="wine6.jpg" width="50%" height="120px" alt="" />
+					<div class="product-description" data-name="Wine #6" data-price="15">
+						<h3 class="product-name">Wine #6:&euro; 15</h3>
+						<form class="add-to-cart" action="cart.html" method="post">
+						<label for="qty-6">Quantity<input type="text" name="qty-6" id="qty-6" class="qty" value="1" /> </label>
+						<br>
+							<input type="submit" value="Add"  class="btn-info btn-sm" />&nbsp;
+							<input type="button"  data-toggle="modal"  value="Details"   data-toggle="modal" data-target="#wine6details"  class="btn-info btn-sm"  />
+							
+						</form>
+						
+					</div>
+					
+				</li>
+            </div>
+        </div>
+		
+		<div class="col-md-3 filter russian">
+            <div class="each-item">
+              <li>
+					 <img src="wine7.jpg" width="25%" height="120px" alt="" />
+					<div class="product-description" data-name="Wine #7" data-price="25">
+						<h3 class="product-name">Wine #7 &euro; 25</h3>
+						<form class="add-to-cart" action="cart.html" method="post">
+						<label for="qty-7">Quantity<input type="text" name="qty-7" id="qty-7" class="qty" value="1" /> </label>
+						<br>
+							<input type="submit" value="Add"  class="btn-info btn-sm" />&nbsp;
+							<input type="button"  data-toggle="modal"  value="Details"   data-toggle="modal" data-target="#wine7details"  class="btn-info btn-sm"  />
+							
+						</form>
+						
+					</div>
+					
+				</li>
+				
+				
+                
+            </div>
+            
+        </div>
+		
+		<div class="col-md-3 filter germany russian">
+            <div class="each-item">
+                <li>
+					<div class="product-image">
+						<img src="wine8.jpg"   width="50%" height="120px" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #8" data-price="8">
+						<h3 class="product-name">Wine #8:&euro; 8</h3>
+						<form class="add-to-cart" action="cart.html" method="post">
+						<label for="qty-1">Quantity<input type="text" name="qty-8" id="qty-8" class="qty" value="1" /> </label>
+						<br>
+							<input type="submit" value="Add"  class="btn-info btn-sm" />&nbsp;
+							<input type="button"  data-toggle="modal"  value="Details"   data-toggle="modal" data-target="#wine8details"  class="btn-info btn-sm"  />
+							
+						</form>
+					</div>
+				</li>
+            </div>
+        </div>
+		
+		
+		<div class="col-md-3 filter uk">
+            <div class="each-item">
+            <li>
+					<div class="product-image">
+						<img src="wine9.jpg"    width="70%" height="120px" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #9" data-price="15">
+						<h3 class="product-name">Wine #9:&euro; 15</h3>
+						
+						<form class="add-to-cart" action="cart.html" method="post">
+						<label for="qty-1">Quantity<input type="text" name="qty-9" id="qty-9" class="qty" value="1" /> </label>
+						<br>
+							<input type="submit" value="Add"  class="btn-info btn-sm" />&nbsp;
+							<input type="button"  data-toggle="modal"  value="Details"   data-toggle="modal" data-target="#wine9details"  class="btn-info btn-sm"  />
+							
+						</form>
+					</div>
+				</li>
+            </div>
+        </div>
+		
+		
+		<div class="col-md-3 filter germany russian">
+            <div class="each-item">
+                <li>
+					<div class="product-image">
+						<img src="wine10.jpg"    width="50%" height="120px" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #10" data-price="20">
+						<h3 class="product-name">Wine #10:&euro; 20</h3>
+						
+						<form class="add-to-cart" action="cart.html" method="post">
+						<label for="qty-1">Quantity<input type="text" name="qty-10" id="qty-10" class="qty" value="1" /> </label>
+						<br>
+							<input type="submit" value="Add"  class="btn-info btn-sm" />&nbsp;
+							<input type="button"  data-toggle="modal"  value="Details"   data-toggle="modal" data-target="#wine10details"  class="btn-info btn-sm"  />
+							
+						</form>
+					</div>
+				</li>
+            </div>
+        </div>
+		
+		
+		
+    </div>
+	</ul>
+	</div></div></div>
+</div>
